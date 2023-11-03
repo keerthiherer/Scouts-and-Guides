@@ -1,4 +1,15 @@
 # Scouts-and-Guides
+Installation....
+===>>> pip install PyQt5
+====>>> pip install PyQt5-Qt5
+===>>> pip install PyQt5-sip
+===>>> pip install pyttsx3
+=====>>>> pip install webbrowser
+====>>>> pip install requests
+
+running....
+====> python main.py
+
 This tool is made by keerthibalan and karthi of kv dgqa
 this tool work as a bible for scouts and guides....
 easy to use GUI interface..... lots information in one app. 
