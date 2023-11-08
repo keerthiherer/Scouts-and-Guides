@@ -11,12 +11,6 @@ import webbrowser
 import os
 from PyQt5.QtCore import *
 
-s = input("enter 1 to continue:")
-if s == "1":
-    os.startfile("jar.mp3")
-    time.sleep(17)
-else:
-      print("starting")
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -30,7 +24,6 @@ def speak(audio):
 
 
 def pravesh():
-     time.sleep(1)
      label3.hide, btn.hide(), btn2.hide(), btn3.hide(), btn4.hide(),btn5.hide(),btn6.hide()
      btn7.hide(), btn8.hide(),btn9.hide(),btn10.hide()
 
@@ -44,7 +37,7 @@ def pravesh():
     border-style: inset;
     padding: 2px;
     font: bold 16px;
-    border-color: yellow;
+    border-color: blue;
     border-width: 6px;
     border-radius: 10px;
 }
@@ -76,7 +69,7 @@ QPushButton:hover {
     border-style: inset;
     padding: 2px;
     font: bold 16px;
-    border-color: yellow;
+    border-color: blue;
     border-width: 6px;
     border-radius: 10px;
 }
@@ -102,7 +95,7 @@ QPushButton:hover {
     border-style: inset;
     padding: 2px;
     font: bold 16px;
-    border-color: yellow;
+    border-color: blue;
     border-width: 6px;
     border-radius: 10px;
 }
@@ -129,7 +122,7 @@ QPushButton:hover {
     border-style: inset;
     padding: 2px;
     font: bold 16px;
-    border-color: yellow;
+    border-color: blue;
     border-width: 6px;
     border-radius: 10px;
 }
@@ -197,7 +190,7 @@ QPushButton:hover {
     border-style: inset;
     padding: 2px;
     font: bold 16px;
-    border-color: yellow;
+    border-color: blue;
     border-width: 6px;
     border-radius: 10px;
 }
@@ -220,7 +213,7 @@ QPushButton:hover {
     border-style: inset;
     padding: 2px;
     font: bold 16px;
-    border-color: yellow;
+    border-color: blue;
     border-width: 6px;
     border-radius: 10px;
 }
@@ -243,7 +236,7 @@ QPushButton:hover {
     border-style: inset;
     padding: 2px;
     font: bold 16px;
-    border-color: yellow;
+    border-color: blue;
     border-width: 6px;
     border-radius: 10px;
 }
@@ -400,7 +393,7 @@ Victory, Victory, Victory to Thee.''')
            btnfb1.clicked.connect(backfb)
            btnfb1.show()
      btnp6.clicked.connect(song)
-def hand():
+def hand(): 
       labelhan = QLabel(w)
       labelhan.setPixmap(QPixmap('sign.jpg'))
       labelhan.setGeometry(180,170,720,437)
@@ -548,11 +541,9 @@ A Scout Guide is thrifty.
 A Scout Guide is pure in thought, word and deed.''')
 
 def sound():
-      os.startfile("sound.mp3")
+      webbrowser.open("app.html")
 def search():
-      
       text, ok = QInputDialog.getText(w, 'Search Input bar', 'Enter what you want to search from internet:')
-		
       if ok:
          webbrowser.open("https://www.google.com/search?q=" + text)
 
@@ -563,7 +554,22 @@ def pratham():
       btnpra.setGeometry
       btnpra.setText("LOOKING AFTER YOURSELF")
       btnpra.setGeometry(410,200,220,50)
-      btnpra.setStyleSheet("font-style:bold;font-size:17px; color:red;background-color:skyblue;")
+      btnpra.setStyleSheet('''QPushButton {
+    background-color: skyblue;
+    color: red;
+    border-style: inset;
+    padding: 2px;
+    font: bold 14px;
+    border-color:  #4B0082;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: #FF1493;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
       def look1():
             label3.hide()
             labellook = QLabel(w)
@@ -603,7 +609,23 @@ Adding the finishing touches.
       btnpra1 = QPushButton(w)
       btnpra1.setText("B.P EXERCISE")
       btnpra1.setGeometry(410,250,220,50)
-      btnpra1.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
+      btnpra1.setStyleSheet('''QPushButton {
+    background-color: skyblue;
+    color: red;
+    border-style: inset;
+    padding: 2px;
+    font: bold 16px;
+    border-color:  #4B0082;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: #FF1493;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      #btnpra1.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
       def bp():
             labelbp = QLabel(w)
             labelbp.setPixmap(QPixmap('bpsix.jpg'))
@@ -630,7 +652,23 @@ Adding the finishing touches.
       btnpra1.show()
       btnpra2 = QPushButton(w)
       btnpra2.setText("DISCIPLINE")
-      btnpra2.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
+      btnpra2.setStyleSheet('''QPushButton {
+    background-color: skyblue;
+    color: red;
+    border-style: inset;
+    padding: 2px;
+    font: bold 16px;
+    border-color:  #4B0082;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: #FF1493;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      #btnpra2.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
       btnpra2.setGeometry(410,300,220,50)
       btnpra2.show()
       def displ():
@@ -689,7 +727,24 @@ together, or to signal the end of a patrol activity.''')
       btnpra2.clicked.connect(displ)
       btnpra3 = QPushButton(w)
       btnpra3.setText("HAND AND WHISTLE SIGNALS")
-      btnpra3.setStyleSheet("font-style:bold;font-size:15px; color:red;background-color:skyblue;")
+      btnpra3.setStyleSheet('''QPushButton {
+    background-color: skyblue;
+    color: red;
+    border-style: inset;
+    padding: 2px;
+    font: bold 14px;
+    font-size:13px;
+    border-color: #4B0082;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: #FF1493;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      #btnpra3.setStyleSheet("font-style:bold;font-size:15px; color:red;background-color:skyblue;")
       btnpra3.setGeometry(410,350,220,50)
       def handandwhis():
             webbrowser.open("handsignal.html")
@@ -698,7 +753,23 @@ together, or to signal the end of a patrol activity.''')
       btnpra4 = QPushButton(w)
       btnpra4.setText("KNOTS AND LASHING")
       btnpra4.setGeometry(410,400,220,50)
-      btnpra4.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
+      btnpra4.setStyleSheet('''QPushButton {
+    background-color: skyblue;
+    color: red;
+    border-style: inset;
+    padding: 2px;
+    font: bold 16px;
+    border-color:  #4B0082;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: #FF1493;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      #btnpra4.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
       def knots():
             webbrowser.open("knots.html")
       btnpra4.clicked.connect(knots)
@@ -706,7 +777,23 @@ together, or to signal the end of a patrol activity.''')
       btnpra5 = QPushButton(w)
       btnpra5.setText("FIRST AID")
       btnpra5.setGeometry(410,450,220,50)
-      btnpra5.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
+      btnpra5.setStyleSheet('''QPushButton {
+    background-color: skyblue;
+    color: red;
+    border-style: inset;
+    padding: 2px;
+    font: bold 16px;
+    border-color:  #4B0082;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: #FF1493;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      #btnpra5.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
       btnpra5.show()
       def firstaid():
             webbrowser.open("firstaid.html")
@@ -727,7 +814,23 @@ def dwitya():
       btn8.hide(),btn9.hide(),btn10.hide()
       btndwi = QPushButton(w)
       btndwi.setText("TOOLS HANDLING")
-      btndwi.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
+      btndwi.setStyleSheet('''QPushButton {
+    background-color: #32CD32;
+    color: black;
+    border-style: inset;
+    padding: 2px;
+    font: bold 16px;
+    border-color: gray;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: #FF1493;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      #btndwi.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
       btndwi.setGeometry(410,200,220,50)
       def tools():
             webbrowser.open("tools.html")
@@ -735,7 +838,23 @@ def dwitya():
       btndwi.show()
       btndwi2 = QPushButton(w)
       btndwi2.setText("FIRE")
-      btndwi2.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
+      btndwi2.setStyleSheet('''QPushButton {
+    background-color: #32CD32;
+    color: black;
+    border-style: inset;
+    padding: 2px;
+    font: bold 16px;
+    border-color: gray;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: #FF1493;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+     # btndwi2.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
       btndwi2.setGeometry(410,250,220,50)
       def fire():
             webbrowser.open("https://www.scouterlife.com/blog/2019/2/7/nine-different-types-of-fires")
@@ -745,7 +864,23 @@ def dwitya():
       btndwi3 = QPushButton(w)
       btndwi3.setText("COOKING")
       btndwi3.setGeometry(410,300,220,50)
-      btndwi3.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
+      btndwi3.setStyleSheet('''QPushButton {
+    background-color: #32CD32;
+    color: black;
+    border-style: inset;
+    padding: 2px;
+    font: bold 16px;
+    border-color: gray;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: #FF1493;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      #btndwi3.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
       def cook():
             webbrowser.open("cook.html")
       btndwi3.clicked.connect(cook)
@@ -754,7 +889,23 @@ def dwitya():
       btndwi4 = QPushButton(w)
       btndwi4.setText("COMPASS")
       btndwi4.setGeometry(410,350,220,50)
-      btndwi4.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
+      btndwi4.setStyleSheet('''QPushButton {
+    background-color: #32CD32;
+    color: black;
+    border-style: inset;
+    padding: 2px;
+    font: bold 16px;
+    border-color: gray;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: #FF1493;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      #btndwi4.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
       def comp():
             webbrowser.open("compass.html")
       btndwi4.clicked.connect(comp)
@@ -763,7 +914,23 @@ def dwitya():
       btndwi5 = QPushButton(w)
       btndwi5.setText("CONSTELLATIONS")
       btndwi5.setGeometry(410,400,220,50)
-      btndwi5.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
+      btndwi5.setStyleSheet('''QPushButton {
+    background-color: #32CD32;
+    color: black;
+    border-style: inset;
+    padding: 2px;
+    font: bold 16px;
+    border-color: gray;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: #FF1493;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      #btndwi5.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
       def constel():
             webbrowser.open("conste.html")
       btndwi5.clicked.connect(constel)
@@ -772,7 +939,23 @@ def dwitya():
       btndwi6 = QPushButton(w)
       btndwi6.setText("MAPPING")
       btndwi6.setGeometry(410,450,220,50)
-      btndwi6.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
+      btndwi6.setStyleSheet('''QPushButton {
+    background-color: #32CD32;
+    color: black;
+    border-style: inset;
+    padding: 2px;
+    font: bold 16px;
+    border-color: gray;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: #FF1493;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      #btndwi6.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
       def mapping():
             webbrowser.open("map.html")
       btndwi6.clicked.connect(mapping)
@@ -781,7 +964,23 @@ def dwitya():
       btndwi7 = QPushButton(w)
       btndwi7.setText("ESITMATION")
       btndwi7.setGeometry(410,500,220,50)
-      btndwi7.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
+      btndwi7.setStyleSheet('''QPushButton {
+    background-color: #32CD32;
+    color: black;
+    border-style: inset;
+    padding: 2px;
+    font: bold 16px;
+    border-color: gray;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: #FF1493;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      #btndwi7.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
       def esti():
             webbrowser.open("estim.html")
       btndwi7.clicked.connect(esti)
@@ -790,7 +989,23 @@ def dwitya():
       btndwi8 = QPushButton(w)
       btndwi8.setText("IMPORTANT ACTIVITY")
       btndwi8.setGeometry(410,550,220,50)
-      btndwi8.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
+      btndwi8.setStyleSheet('''QPushButton {
+    background-color: #32CD32;
+    color: black;
+    border-style: inset;
+    padding: 2px;
+    font: bold 16px;
+    border-color: gray;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: #FF1493;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      #btndwi8.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
       def act():
             webbrowser.open("act.html")
       btndwi8.clicked.connect(act)
@@ -813,7 +1028,23 @@ def tritya():
       btntri = QPushButton(w)
       btntri.setText("CAMPING")
       btntri.setGeometry(410,200,220,50)
-      btntri.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
+      btntri.setStyleSheet('''QPushButton {
+    background-color: skyblue;
+    color: red;
+    border-style: inset;
+    padding: 2px;
+    font: bold 16px;
+    border-color: #00008B;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: red;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      #btntri.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
       def camp():
             webbrowser.open("camp.html")
       btntri.clicked.connect(camp)
@@ -822,7 +1053,23 @@ def tritya():
       btntri2 = QPushButton(w)
       btntri2.setText("ESTIMATION")
       btntri2.setGeometry(410,250,220,50)
-      btntri2.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
+      btntri2.setStyleSheet('''QPushButton {
+    background-color: skyblue;
+    color: red;
+    border-style: inset;
+    padding: 2px;
+    font: bold 16px;
+    border-color:  #00008B;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: red;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      #btntri2.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
       def estii():
             webbrowser.open("estim.html")
       btntri2.clicked.connect(estii)
@@ -831,7 +1078,23 @@ def tritya():
       btntri3 = QPushButton(w)
       btntri3.setText("First Aid II")
       btntri3.setGeometry(410,300,220,50)
-      btntri3.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
+      btntri3.setStyleSheet('''QPushButton {
+    background-color: skyblue;
+    color: red;
+    border-style: inset;
+    padding: 2px;
+    font: bold 16px;
+    border-color:  #00008B;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: red;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      #btntri3.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
       def firstaid2():
             webbrowser.open("firstaid.html")
       btntri3.clicked.connect(firstaid2)
@@ -840,7 +1103,23 @@ def tritya():
       btntri4 = QPushButton(w)
       btntri4.setText("MAPPING II")
       btntri4.setGeometry(410,350,220,50)
-      btntri4.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
+      btntri4.setStyleSheet('''QPushButton {
+    background-color: skyblue;
+    color: red;
+    border-style: inset;
+    padding: 2px;
+    font: bold 16px;
+    border-color:  #00008B;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: red;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      #btntri4.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
       def mapp2():
             webbrowser.open("map2.html")
       btntri4.clicked.connect(mapp2)
@@ -849,7 +1128,23 @@ def tritya():
       btntri5 = QPushButton(w)
       btntri5.setText("SIGNALLING")
       btntri5.setGeometry(410,400,220,50)
-      btntri5.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
+      btntri5.setStyleSheet('''QPushButton {
+    background-color: skyblue;
+    color: red;
+    border-style: inset;
+    padding: 2px;
+    font: bold 16px;
+    border-color:  #00008B;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: red;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      #btntri5.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:skyblue;")
       def signal():
             btntri.hide(),btntri2.hide(),btntri3.hide(),btntri4.hide(),btntri5.hide()
             label3.hide()
@@ -882,6 +1177,167 @@ def tritya():
 
       btntri5.clicked.connect(signal)
       btntri5.show()
+      btntri6 = QPushButton(w)
+      btntri6.setText("IMPORTANT ACTIVITY")
+      btntri6.setGeometry(410,450,220,50)
+      btntri6.setStyleSheet('''QPushButton {
+    background-color: skyblue;
+    color: red;
+    border-style: inset;
+    padding: 2px;
+    font: bold 16px;
+    border-color: #00008B;
+    border-width: 6px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: red;
+    color: Cyan;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      def imp2():
+            webbrowser.open("act2.html")
+      btntri6.clicked.connect(imp2)
+      btntri6.show()
+
+      btnbacktri = QPushButton(w)
+      btnbacktri.setText("GO BACK")
+      btnbacktri.setGeometry(840,70,130,50)
+      btnbacktri.setStyleSheet("font-style:bold;font-size:23px; color:white;background-color:purple;")
+      btnbacktri.show()
+      def backtri():
+            print("argv: ", sys.argv)
+            print("sys executable: " , sys.executable)
+            os.execv(sys.executable,['python'] + sys.argv)
+      btnbacktri.clicked.connect(backtri)
+
+def rajya():
+      btn.hide(),btn2.hide(),btn3.hide(),btn4.hide(),btn5.hide()
+      btn6.hide(),btn7.hide(),btn8.hide(),btn9.hide(),btn10.hide()
+      btnraj = QPushButton(w)
+      btnraj.setText("PIONEERING PROJECT")
+      btnraj.setGeometry(410,200,220,50)
+      btnraj.setStyleSheet('''QPushButton {
+    background-color: #CD5C5C;
+    color: black;
+    border-style: outset;
+    padding: 2px;
+    font: bold 18px;
+    border-width: 6px;
+    border-radius: 10px;
+    border-color: gray;
+}
+QPushButton:hover {
+    background-color: #ADFF2F;
+    color: #FF1493;
+    border-style: inset;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      btnraj.show()
+      def raj2():
+            webbrowser.open("pioneerpro.pdf")
+      btnraj.clicked.connect(raj2)
+      btnraj3 = QPushButton(w)
+      btnraj3.setText("CAMP CRAFT")
+      btnraj3.setStyleSheet('''QPushButton {
+    background-color: #CD5C5C;
+    color: black;
+    border-style: outset;
+    padding: 2px;
+    font: bold 16px;
+    border-width: 6px;
+    border-radius: 10px;
+    border-color: gray;
+}
+QPushButton:hover {
+    background-color: #ADFF2F;
+    color: #FF1493;
+    border-style: inset;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      btnraj3.setGeometry(410,250,220,50)
+      def raj4():
+            webbrowser.open("campcraft.pdf")
+      btnraj3.clicked.connect(raj4)
+      btnraj3.show()
+      btnraj2 = QPushButton(w)
+      btnraj2.setText("IMPORTANT ACTIVITIES")
+      btnraj2.setStyleSheet('''QPushButton {
+    background-color: #CD5C5C;
+    color: black;
+    border-style: outset;
+    padding: 2px;
+    font: bold 16px;
+    border-width: 6px;
+    border-radius: 10px;
+    border-color: gray;
+}
+QPushButton:hover {
+    background-color: #ADFF2F;
+    color: #FF1493;
+    border-style: inset;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      btnraj2.setGeometry(410,300,220,50)
+      btnraj2.show()
+      def raj3():
+            webbrowser.open("raj2.html")
+      btnraj2.clicked.connect(raj3)
+
+      btnbacktri2 = QPushButton(w)
+      btnbacktri2.setText("GO BACK")
+      btnbacktri2.setGeometry(840,70,130,50)
+      btnbacktri2.setStyleSheet("font-style:bold;font-size:23px; color:white;background-color:purple;")
+      btnbacktri2.show()
+      def backtri():
+            print("argv: ", sys.argv)
+            print("sys executable: " , sys.executable)
+            os.execv(sys.executable,['python'] + sys.argv)
+      btnbacktri2.clicked.connect(backtri)
+
+def rashtra():
+      btn.hide(),btn2.hide(),btn3.hide(),btn4.hide(),btn5.hide()
+      btn6.hide(),btn7.hide(),btn8.hide(),btn9.hide(),btn10.hide()
+      btnrash = QPushButton(w)
+      btnrash.setText("MAIN WEB")
+      btnrash.setGeometry(330,250,400,300)
+      btnrash.setStyleSheet('''QPushButton {
+    background-color: gold;
+    color: black;
+    border-style: outset;
+    padding: 2px;
+    font: bold 16px;
+    border-width: 6px;
+    border-radius: 10px;
+    border-color: gray;
+}
+QPushButton:hover {
+    background-color: #ADFF2F;
+    color: #FF1493;
+    border-style: inset;
+    border-width: 4px;
+    border-radius: 8px;
+}''')
+      btnrash.show()
+      def rash2():
+            webbrowser.open("rash.html")
+      btnrash.clicked.connect(rash2)
+
+      btnbacktri3 = QPushButton(w)
+      btnbacktri3.setText("GO BACK")
+      btnbacktri3.setGeometry(840,70,130,50)
+      btnbacktri3.setStyleSheet("font-style:bold;font-size:23px; color:white;background-color:purple;")
+      btnbacktri3.show()
+      def backtri():
+            print("argv: ", sys.argv)
+            print("sys executable: " , sys.executable)
+            os.execv(sys.executable,['python'] + sys.argv)
+      btnbacktri3.clicked.connect(backtri)
+
 if __name__ == "__main__":
     
     app = QApplication(sys.argv)
@@ -916,15 +1372,13 @@ if __name__ == "__main__":
     label3.setStyleSheet("font-style: normal; color:white ;background-color: purple;  border: 5px solid darkorange;")
     label3.show()
     
-    
-
     btn = QPushButton(w)
     btn.setText('PRAVESH')
     #btn.move(450,130)
     btn.setGeometry(410,200,220,50)
     btn.setStyleSheet('''QPushButton {
-    background-color: #F4C430;
-    color: red;
+    background-color: #FF6347;
+    color: black;
     border-style: outset;
     padding: 2px;
     font: bold 20px;
@@ -933,8 +1387,9 @@ if __name__ == "__main__":
     border-color: gray;
 }
 QPushButton:hover {
-    background-color: #00FF00;
-    color: orange;
+    background-color: #00FFFF;
+    color: #FF1493;
+    border-style: inset;
     border-width: 4px;
     border-radius: 8px;
 }''')
@@ -947,8 +1402,8 @@ QPushButton:hover {
     btn2.setText('PRATHAM SOPAN')
     btn2.setGeometry(410,250,220,50)
     btn2.setStyleSheet('''QPushButton {
-    background-color: #F4C430;
-    color: red;
+    background-color: #FF6347;
+    color: black;
     border-style: outset;
     padding: 2px;
     font: bold 20px;
@@ -957,8 +1412,9 @@ QPushButton:hover {
     border-color: gray;
 }
 QPushButton:hover {
-    background-color: #FF00FF;
-    color: white;
+    background-color: #00FFFF;
+    color: #FF1493;
+    border-style: inset;
     border-width: 4px;
     border-radius: 8px;
 }''')
@@ -971,7 +1427,7 @@ QPushButton:hover {
     btn3.setGeometry(410,300,220,50)
     btn3.setStyleSheet('''QPushButton {
     background-color: white;
-    color: #000080 ;
+    color: black ;
     border-style: outset;
     padding: 2px;
     font: bold 20px;
@@ -980,8 +1436,9 @@ QPushButton:hover {
     border-color: gray;
 }
 QPushButton:hover {
-    background-color: #9ACD32;
+    background-color: #00FFFF;
     color: #FF1493;
+    border-style: inset;
     border-width: 4px;
     border-radius: 8px;
 }''')
@@ -995,7 +1452,7 @@ QPushButton:hover {
     btn4.setGeometry(410,350,220,50)
     btn4.setStyleSheet('''QPushButton {
     background-color: white;
-    color: #000080 ;
+    color: black ;
     border-style: outset;
     padding: 2px;
     font: bold 20px;
@@ -1004,8 +1461,9 @@ QPushButton:hover {
     border-color: gray;
 }
 QPushButton:hover {
-    background-color: Tan;
+    background-color: #00FFFF;
     color: #FF1493;
+    border-style: inset;                   
     border-width: 4px;
     border-radius: 8px;
 }''')
@@ -1019,7 +1477,7 @@ QPushButton:hover {
     btn5.setGeometry(410,400,220,50)
     btn5.setStyleSheet('''QPushButton {
     background-color: green;
-    color: #000080 ;
+    color: black ;
     border-style: outset;
     padding: 2px;
     font: bold 20px;
@@ -1028,13 +1486,15 @@ QPushButton:hover {
     border-color: gray;
 }
 QPushButton:hover {
-    background-color: Purple;
-    color: Lime;
+    background-color: #00FFFF;
+    color: #FF1493;
+    border-style: inset;                   
     border-width: 4px;
     border-radius: 8px;
 }''')
     #btn5.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:green ")
     btn5.show()
+    btn5.clicked.connect(rajya)
 
     btn6 = QPushButton(w)
     btn6.setText('RASHTRAPATHI AWARD')
@@ -1042,7 +1502,7 @@ QPushButton:hover {
     btn6.setGeometry(410,450,220,50)
     btn6.setStyleSheet('''QPushButton {
     background-color: green;
-    color: #000080 ;
+    color: black ;
     border-style: outset;
     padding: 2px;
     font: bold 16px;
@@ -1051,12 +1511,14 @@ QPushButton:hover {
     border-radius: 10px;
 }
 QPushButton:hover {
-    background-color: #2F4F4F;
-    color: #00BFFF;
+    background-color: #00FFFF;
+    color: #FF1493;
+    border-style: inset;                   
     border-width: 4px;
     border-radius: 8px;
 }''')
     #btn6.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:green; ")
+    btn6.clicked.connect(rashtra)
     btn6.show()
 
     btn10 = QPushButton(w)
@@ -1073,8 +1535,9 @@ QPushButton:hover {
     border-radius: 10px;
 }
 QPushButton:hover {
-    background-color: #FF1493;
-    color: Cyan;
+    background-color: #00FFFF;
+    color: Black;
+    border-style: inset;                    
     border-width: 4px;
     border-radius: 8px;
 }''')
@@ -1091,7 +1554,16 @@ QPushButton:hover {
     btn7.setStyleSheet("font-style:bold;font-size:20px; color:red;background-color:grey")
     btn7.show()
     def about():
-          webbrowser.open("https://gkbeasteregg.blogspot.com/2023/09/jamboree.html")
+          webbrowser.open("https://github.com/keerthiherer/Scouts-and-Guides")
+          text, ok = QInputDialog.getText(w, 'Easter egg Input bar', 'Enter the word similar to founder of this app GKB or LBP:')
+          if ok:
+            if text == "GKB":
+               webbrowser.open("https://gkbeasteregg.blogspot.com/2023/09/jamboree.html")
+            else: 
+                  print("try again")
+                  print("argv: ", sys.argv)
+                  print("sys executable: " , sys.executable)
+                  os.execv(sys.executable,['python'] + sys.argv)
     btn7.clicked.connect(about)
 
     btn8 = QPushButton(w)
