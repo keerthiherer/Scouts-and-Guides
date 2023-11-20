@@ -42,6 +42,9 @@ easy to use GUI interface..... lots information in one app.
 **Image of the resource full websites attached in the software to gain information with audio,text,video etc...**
 
 
+
+
+
 **Features**===>>>>
 
 GUI easy interface...
