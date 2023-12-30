@@ -18,14 +18,16 @@ Installation....
 
 ===>>> pip install requests
 
-![image](https://github.com/keerthiherer/Scouts-and-Guides/assets/136905413/668c9317-3815-4caa-8351-b94a65e41eea)
-
-
 running....
 
 ====> python main.py
      (or)
 ====> python3 main.py
+
+![image](https://github.com/keerthiherer/Scouts-and-Guides/assets/136905413/668c9317-3815-4caa-8351-b94a65e41eea)
+
+
+
 
 ![3](https://github.com/keerthiherer/Scouts-and-Guides/assets/136905413/6f316942-cc8e-454d-9a47-23ae688fd080)
 
