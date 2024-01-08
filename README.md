@@ -18,6 +18,8 @@ Installation....
 
 ===>>> pip install requests
 
+===>>> pip install cryptography
+
 running....
 
 ====> python main.py
